@@ -1,5 +1,5 @@
 
-
+//
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const credenciais = require('./credentials.json');
 const file = require('./file.json');
