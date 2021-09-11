@@ -1,5 +1,5 @@
 /node_modules/
-/credentials.json/
-/file.json/
+credentials.json
+file.json
 
 .DS_Store
