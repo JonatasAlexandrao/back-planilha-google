@@ -1,5 +1,10 @@
 
-//
+
+export function soma() {
+  return 'soma aqui'
+}
+
+
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const credenciais = require('./credentials.json');
 const file = require('./file.json');
@@ -19,15 +24,13 @@ getDoc().then(doc => {
   console.log(doc.title)
 })
 
-getDoc().then(doc => {
-  sheet = doc.sheetsByIndex[0];
-  sheet.getRows().then(rows => {
-    rows.map(row => {
-      console.log(row.produto)
+const t = () => {
+  getDoc().then(doc => {
+    sheet = doc.sheetsByIndex[0];
+    sheet.getRows().then(rows => {
+      rows.map(row => {
+        console.log(row.produto)
+      })
     })
   })
-})
-
-
-
-
+}
